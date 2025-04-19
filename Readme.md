@@ -10,9 +10,14 @@
   *
   * @IO
   * 硬件串口            PB6 -> USART1_TX  PB7 -> USART1_RX
-  * OLED显示(软件IIC)   PA6 -> SDA        PA5 -> SCL
-  * LED灯              PB0 -> LD1(GREEN) PE1 -> LD2(YELLOW) PB14-> LD3(RED)
+  * LED灯               PB0 -> LD1(GREEN) PE1 -> LD2(YELLOW) PB14-> LD3(RED)
   * 按键中断            PC13-> KEY
   *
+  * @模块接线
+  * OLED模块(软件IIC)  STM32H753ZI
+  *      VCC   <------  5.0V      5V供电
+  *      GND   -------  GND       地
+  *      SCL   <------  PA5       IIC时钟线
+  *      SDA   <----->  PA6       IIC数据线
   ******************************************************************************
   */
